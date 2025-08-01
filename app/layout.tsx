@@ -6,6 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://aashiqfarid.dev'),
   title: 'Aashiq Farid - MERN Stack & Shopify Developer',
   description: 'Full Stack Developer specializing in MERN stack and Shopify app development. Creating exceptional web applications and e-commerce solutions.',
   keywords: ['MERN Stack Developer', 'Shopify Developer', 'Full Stack Developer', 'React Developer', 'Node.js Developer'],

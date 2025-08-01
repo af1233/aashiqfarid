@@ -113,7 +113,7 @@ export function AboutSection() {
               <h3 className="text-2xl font-semibold">Hello! I'm Aashiq Farid</h3>
               <p className="text-muted-foreground leading-relaxed">
                 I'm a passionate full-stack developer specializing in the MERN stack and Shopify app development. 
-                With over 5 years of experience, I've developed multiple successful Shopify apps, built enterprise-level 
+                With over 2 years of experience, I've developed multiple successful Shopify apps, built enterprise-level 
                 applications, and helped businesses transform their ideas into powerful digital solutions.
               </p>
               <p className="text-muted-foreground leading-relaxed">
@@ -136,7 +136,7 @@ export function AboutSection() {
                 {[
                   "React.js", "Node.js", "MongoDB", "Express.js", 
                   "Shopify Apps", "Next.js", "TypeScript", "Tailwind CSS",
-                  "Azure AD", "Ant Design", "Shopify API", "GraphQL"
+                  "Azure AD", "Ant Design", "Shopify API", "GraphQL", "Remix.js", "Prisma", "Vercel"
                 ].map((skill) => (
                   <Badge key={skill} variant="secondary">{skill}</Badge>
                 ))}
