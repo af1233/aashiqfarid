@@ -136,7 +136,13 @@ export function ContactSection() {
                   action="https://formsubmit.co/aashiqfarid64@gmail.com" 
                   method="POST" 
                   className="space-y-4"
+                  autoComplete="off"
                 >
+                  {/* FormSubmit recommended hidden fields */}
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="hidden" name="_template" value="table" />
+                  <input type="hidden" name="_autoresponse" value="Thank you for reaching out! I will get back to you soon." />
+                  <input type="hidden" name="_next" value="https://aashiqfarid.vercel.app/" />
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Name</Label>
@@ -150,7 +156,7 @@ export function ContactSection() {
                       <Label htmlFor="email">Email</Label>
                       <Input
                         id="email"
-                        name="email"
+                        name="_replyto"
                         type="email"
                         required
                       />
