@@ -107,7 +107,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <p className="text-muted-foreground">+923176343324</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
