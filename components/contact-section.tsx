@@ -18,27 +18,8 @@ export function ContactSection() {
   const contactInfoRef = useRef<HTMLDivElement>(null)
   const formRef = useRef<HTMLDivElement>(null)
 
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: ""
-  })
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-    // Reset form
-    setFormData({ name: "", email: "", subject: "", message: "" })
-  }
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }))
-  }
+  // Remove local state and handlers for FormSubmit integration
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -151,15 +132,17 @@ export function ContactSection() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form 
+                  action="https://formsubmit.co/aashiqfarid64@gmail.com" 
+                  method="POST" 
+                  className="space-y-4"
+                >
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Name</Label>
                       <Input
                         id="name"
                         name="name"
-                        value={formData.name}
-                        onChange={handleChange}
                         required
                       />
                     </div>
@@ -169,8 +152,6 @@ export function ContactSection() {
                         id="email"
                         name="email"
                         type="email"
-                        value={formData.email}
-                        onChange={handleChange}
                         required
                       />
                     </div>
@@ -180,8 +161,6 @@ export function ContactSection() {
                     <Input
                       id="subject"
                       name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
                       required
                     />
                   </div>
@@ -191,8 +170,6 @@ export function ContactSection() {
                       id="message"
                       name="message"
                       rows={5}
-                      value={formData.message}
-                      onChange={handleChange}
                       required
                     />
                   </div>

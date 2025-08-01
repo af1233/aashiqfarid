@@ -49,9 +49,11 @@ export function Footer() {
               <Link href="https://www.linkedin.com/in/aashiq-farid/" target="_blank" className="text-muted-foreground hover:text-primary">
                 <Linkedin className="h-5 w-5" />
               </Link>
-              <Link href="mailto:aashiqfarid64@gmail.com?subject=Portfolio%20Contact&body=Hi%20Aashiq,%0A%0A" className="text-muted-foreground hover:text-primary">
-                <Mail className="h-5 w-5" />
-              </Link>
+            </div>
+            <div className="mt-2">
+              <Link href="mailto:aashiqfarid64@gmail.com?subject=Portfolio%20Contact&body=Hi%20Aashiq,%0A%0A" className="text-muted-foreground hover:text-primary text-sm">
+              Email: aashiqfarid64@gmail.com
+            </Link>
             </div>
           </div>
           

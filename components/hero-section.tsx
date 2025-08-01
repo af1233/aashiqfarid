@@ -138,12 +138,6 @@ export function HeroSection() {
             >
               <Linkedin className="h-6 w-6" />
             </Link>
-            <Link 
-              href="mailto:aashiqfarid64@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Aashiq,%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20discuss..."
-              className="text-muted-foreground hover:text-primary transition-colors duration-200"
-            >
-              <Mail className="h-6 w-6" />
-            </Link>
           </div>
         </div>
       </div>
